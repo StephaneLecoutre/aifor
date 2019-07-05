@@ -1,0 +1,53 @@
+html {
+    background-color: #ada098;
+    font-family: Georgia, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+	margin: 70px;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 1px 4px 30px #333333;
+}
+
+
+strong {
+    color: orangered;
+    font-size: 12px;
+    
+}
+
+#profil {
+    float : right;
+    width: 150px;
+}
+
+
+a  :hover {
+    background-color : gold;
+}
+
+fieldset {
+    margin-right: 50%;
+}
+legend {
+    background-color: black;
+    color: white;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 640px) {
+   .large{
+    display: none;
+   } 
+
+   span {
+       color: chartreuse;
+   }
+   body {
+       background-color: blue;
+
+   }
+}
+

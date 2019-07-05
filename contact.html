@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My resume</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function validationFormulaire() {
+            var x = document.forms["monForm"]["message"].value;
+            if (x == null || x =="") {
+                alert("Vous avez oublié d'insérer un message");
+                return false;
+            }
+        
+        }
+        </script>
+    
+</head>
+
+<body>
+        
+        
+    <form  name="monForm" onsubmit="return validationFormulaire()" method="POST" action="#">
+        <fieldset>
+            <legend>Contact</legend>
+
+            <label for="nom"> Nom : </label><br> <input type="text" id="nom" name="nom" placeholder="Nom"
+                autofocus><br><br>
+
+            <label for="mail"> Adresse mail : </label><br> <input type="email" id="mail" name="mail"
+                placeholder="nom@domaine.com"><br><br>
+
+            <label for="telephone"> T&eacute;l&eacute;phone : </label><br> <input type="tel" id="tel" name="tel"
+                placeholder="0659874613"><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea cols="21" rows="5" name="message" placeholder="Message"></textarea><br><br>
+
+            <input type="checkbox" id="bouton" name="bouton">
+            <label for="bouton">Je vous autorise &agrave; conserver ces coordonn&eacute;es</label><br><br>
+
+            <input type="submit" name="envoie" value="Envoyer">
+        </fieldset>
+
+        
+    </form><br>
+    <a href="index.html">Lien vers la page index</a>
+
+</body>
+
+</html>
